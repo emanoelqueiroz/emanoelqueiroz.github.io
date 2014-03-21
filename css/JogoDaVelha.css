@@ -1,0 +1,64 @@
+*{
+padding: 0px;
+margin: 0px;
+font-family: sans-serif;
+}
+*, *:before, *:after {
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+tabuleiro::selection {color:red;background:yellow;}
+.container{
+margin: 0 auto;
+width: 90%;
+max-width: 900px;
+}
+.tabuleiro{
+margin: 0 auto;
+width: 600px;
+height: 600px;
+background-color: #666;
+border: 3px solid silver;
+border-radius: 5px;
+}
+.tabuleiro div {
+float: left;
+height: 198px;
+font-size: 170px;
+border: 1px solid silver;
+width: 198px;
+text-align: center;
+line-height: 190px;
+color: white;
+transition:0.3s;
+}
+.tabuleiro div:hover{
+	background-color: white;
+	color: #666;
+}
+.topo{
+height: 65px;
+background-color: #ececec;
+margin-bottom: 10px;
+}
+.topo h1 {
+text-align: center;
+color: #666;
+line-height: 58px;
+}
+.baixo{
+margin-top: 30px;
+margin-bottom: 20px;
+}
+#botao{
+color: white;
+margin: 0 auto;
+background-color: rgb(216, 45, 45);
+padding: 10px;
+display: none;
+width: 100px;
+border-radius: 5px; 
+cursor: pointer;
+text-align: center;
+}
