@@ -32,26 +32,38 @@ text-align: center;
 line-height: 160px;
 color: white;
 transition:0.3s;
+cursor: pointer;
 }
 .tabuleiro div:hover{
-	background-color: white;
-	color: #666;
+background-color: white;
+color: #666;
 }
-.topo{
+.topo {
 height: 100px;
 background-color: #ececec;
+color: #666;
+border-bottom: 2px solid silver;
 }
 .topo h1 {
 text-align: center;
-color: #666;
-line-height: 85px;
+line-height: 55px;
 }
-#botao{
+#recomecar {
+margin-top: 10px;
+margin-bottom: 10px;
+}
+#botao {
 color: white;
-margin-top: 20px;
-background-color: red;
+font-weight: bold;
+background-color: #666;
 padding: 10px;
+border-radius: 5px;
+margin: 0 auto;
 display: none;
-width: 100px;
+width: 106px;
+text-align: center;
+cursor: pointer;
+}
+#result {
 text-align: center;
 }

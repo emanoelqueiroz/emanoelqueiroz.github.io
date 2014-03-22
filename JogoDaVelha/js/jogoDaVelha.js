@@ -2,6 +2,7 @@ var tabuleiro = [[], [], []];
 var aux = 0;
 var jogadas = 0;
 var acabou = false;
+result = document.getElementById('result');
 
 recarregarPag = function () {
 	window.location.reload();
@@ -10,7 +11,7 @@ recarregarPag = function () {
 marcar = function (x, y) {
 	jogadas++;
 	if (acabou) {
-		alert("acabou");
+		result.innerHTML = "Acabou!"
 		botao = document.getElementById('botao');
 		botao.style.display = "block";
 		return;
@@ -19,7 +20,7 @@ marcar = function (x, y) {
 		var casa = document.getElementById("c"+x+y);
 		jogador = 'X';
 		if(tabuleiro[x][y] != null){
-			alert("Ja foi jogado aqui!")
+			result.innerHTML = 'Esse bloco ja esta marcado!'
 		}else{
 			casa.innerHTML = jogador;
 			tabuleiro[x][y] = jogador;
@@ -29,7 +30,7 @@ marcar = function (x, y) {
 		var casa = document.getElementById("c"+x+y);
 		jogador = 'O';
 		if(tabuleiro[x][y] != null){
-			alert("Ja foi jogado aqui!")
+			result.innerHTML = 'Esse bloco ja esta marcado!'
 		}else{
 			casa.innerHTML = jogador;
 			tabuleiro[x][y] = jogador;
@@ -37,24 +38,24 @@ marcar = function (x, y) {
 		}
 	}
 	if (jogadas == 9) {
-		alert('Deu Empate!');
+		result.innerHTML = 'Deu Empate!'
 	}
 	if (tabuleiro[0][0] == jogador && tabuleiro[0][1] == jogador && tabuleiro[0][2] == jogador ) {
-		alert('Jogador "'+jogador+'" ganhou o jogo!');
+		result.innerHTML = 'Jogador "'+jogador+'" ganhou o jogo!'
 	}else if (tabuleiro[1][0] == jogador && tabuleiro[1][1] == jogador && tabuleiro[1][2] == jogador ) {
-		alert('Jogador "'+jogador+'" ganhou o jogo!');
+		result.innerHTML = 'Jogador "'+jogador+'" ganhou o jogo!'
 	}else if (tabuleiro[2][0] == jogador && tabuleiro[2][1] == jogador && tabuleiro[2][2] == jogador ) {
-		alert('Jogador "'+jogador+'" ganhou o jogo!');
+		result.innerHTML = 'Jogador "'+jogador+'" ganhou o jogo!'
 	}else if (tabuleiro[0][0] == jogador && tabuleiro[1][0] == jogador && tabuleiro[2][0] == jogador ) {
-		alert('Jogador "'+jogador+'" ganhou o jogo!');
+		result.innerHTML = 'Jogador "'+jogador+'" ganhou o jogo!'
 	}else if (tabuleiro[0][1] == jogador && tabuleiro[1][1] == jogador && tabuleiro[2][1] == jogador ) {
-		alert('Jogador "'+jogador+'" ganhou o jogo!');
+		result.innerHTML = 'Jogador "'+jogador+'" ganhou o jogo!'
 	}else if (tabuleiro[0][2] == jogador && tabuleiro[1][2] == jogador && tabuleiro[2][2] == jogador ) {
-		alert('Jogador "'+jogador+'" ganhou o jogo!');
+		result.innerHTML = 'Jogador "'+jogador+'" ganhou o jogo!'
 	}else if (tabuleiro[0][0] == jogador && tabuleiro[1][1] == jogador && tabuleiro[2][2] == jogador ) {
-		alert('Jogador "'+jogador+'" ganhou o jogo!');
+		result.innerHTML = 'Jogador "'+jogador+'" ganhou o jogo!'
 	}else if (tabuleiro[0][2] == jogador && tabuleiro[1][1] == jogador && tabuleiro[2][0] == jogador ) {
-		alert('Jogador "'+jogador+'" ganhou o jogo!');
+		result.innerHTML = 'Jogador "'+jogador+'" ganhou o jogo!'
 	} else {
 		acabou = false;
 		return;
