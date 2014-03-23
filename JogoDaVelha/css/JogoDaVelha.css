@@ -8,7 +8,7 @@ font-family: sans-serif;
 -webkit-box-sizing: border-box;
 box-sizing: border-box;
 }
-tabuleiro::selection {color:red;background:yellow;}
+::selection {text-decoration: none;}
 .container{
 margin: 0 auto;
 width: 90%;
@@ -64,6 +64,4 @@ width: 106px;
 text-align: center;
 cursor: pointer;
 }
-#result {
-text-align: center;
-}
+#result {text-align: center;}
