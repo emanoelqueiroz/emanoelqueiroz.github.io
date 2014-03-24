@@ -1,7 +1,7 @@
 *{
 padding: 0px;
 margin: 0px;
-font-family: sans-serif;
+font-family: sans-serif, arial, helvetica;
 }
 *, *:before, *:after {
 -moz-box-sizing: border-box;
@@ -69,3 +69,8 @@ text-align: center;
 cursor: pointer;
 }
 #result {text-align: center;}
+.comoJogar{
+	margin-top: 15px;
+	color: #666;
+	font-size: 18px;
+}
