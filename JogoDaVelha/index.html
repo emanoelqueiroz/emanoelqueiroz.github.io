@@ -1,32 +1,38 @@
 <html>
-<head>
-	<title>Jogo Da Velha</title>
-	<link rel="stylesheet" type="text/css" href="css/JogoDaVelha.css">
-	<meta charset="UTF-8"> 
-</head>
-<body>
-	<div class="topo">
+	<head>
+		<title>Jogo da Velha</title>
+		<link rel="stylesheet" type="text/css" href="css/JogoDaVelha.css">
+		<meta charset="UTF-8"> 
+		<meta name="author" content="Emanoel Alves de Queiroz">
+		<meta property="og:locale" content="pt_BR">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Jogo da Velha">
+		<meta property="og:url" content="dimebag03.github.io/JogoDaVeha">
+		<meta property="og:site_name" content="Jogo da Velha">
+	</head>
+	<body>
+		<div class="topo">
+			<div class="container">
+				<h1>Jogo da Velha</h1>
+				<h3 id="result"></h3>
+			</div>
+		</div>
 		<div class="container">
-			<h1>Jogo da Velha</h1>
-			<h3 id="result"></h3>
+			<div id="recomecar">
+				<div id="botao" onclick="recarregarPag();">Recomeçar</div>
+			</div>
+			<div class="tabuleiro">
+				<div id="c00" onclick="marcar(0, 0);"></div>
+				<div id="c01" onclick="marcar(0, 1);"></div>
+				<div id="c02" onclick="marcar(0, 2);"></div>
+				<div id="c10" onclick="marcar(1, 0);"></div>
+				<div id="c11" onclick="marcar(1, 1);"></div>
+				<div id="c12" onclick="marcar(1, 2);"></div>
+				<div id="c20" onclick="marcar(2, 0);"></div>
+				<div id="c21" onclick="marcar(2, 1);"></div>
+				<div id="c22" onclick="marcar(2, 2);"></div>
+			</div>
 		</div>
-	</div>
-	<div class="container">
-		<div id="recomecar">
-			<div id="botao" onclick="recarregarPag();">Recomeçar</div>
-		</div>
-		<div class="tabuleiro">
-			<div id="c00" onclick="marcar(0, 0);"></div>
-			<div id="c01" onclick="marcar(0, 1);"></div>
-			<div id="c02" onclick="marcar(0, 2);"></div>
-			<div id="c10" onclick="marcar(1, 0);"></div>
-			<div id="c11" onclick="marcar(1, 1);"></div>
-			<div id="c12" onclick="marcar(1, 2);"></div>
-			<div id="c20" onclick="marcar(2, 0);"></div>
-			<div id="c21" onclick="marcar(2, 1);"></div>
-			<div id="c22" onclick="marcar(2, 2);"></div>
-		</div>
-	</div>
-	<script type="text/javascript" src="js/jogoDaVelha.js"></script>
-</body>
+		<script type="text/javascript" src="js/jogoDaVelha.js"></script>
+	</body>
 </html>
