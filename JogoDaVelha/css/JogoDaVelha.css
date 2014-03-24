@@ -44,6 +44,10 @@ background-color: #ececec;
 color: #666;
 border-bottom: 2px solid silver;
 }
+.topo a{
+	text-decoration: none;
+	color: #666;
+}
 .topo h1 {
 text-align: center;
 line-height: 55px;
