@@ -2,8 +2,16 @@ var tabuleiro = [[], [], []];
 var aux = 0;
 var jogadas = 0;
 var acabou = false;
+var tipoJoga = 0;
+
 result = document.getElementById('result');
 veri = 0;
+
+modalFechar = function (a) {
+	var modal = document.getElementById('black');
+	modal.style.display = 'none';
+	tipoJoga = a;
+}
 
 recarregarPag = function () {
 	window.location.reload();
@@ -26,6 +34,23 @@ robo = function  () {
 	}
 }
 
+jogar = function  (a, b, x, y) {
+	var casa = document.getElementById("c"+x+y);
+		jogador = b;
+
+		if(tabuleiro[x][y] != null){
+			result.innerHTML = 'Esse bloco ja esta marcado!';
+		}else{
+			casa.innerHTML = jogador;
+			tabuleiro[x][y] = jogador;
+			aux = a;
+			verificar();
+			if(veri == 0){
+				marcar();
+			}
+		}
+}
+
 marcar = function (x, y) {
 	jogadas++;
 	if (acabou) {
@@ -35,22 +60,11 @@ marcar = function (x, y) {
 		return;
 	}
 	if(aux == 0){
-		var casa = document.getElementById("c"+x+y);
-		jogador = 'X';
-
-		if(tabuleiro[x][y] != null){
-			result.innerHTML = 'Esse bloco ja esta marcado!';
-		}else{
-			casa.innerHTML = jogador;
-			tabuleiro[x][y] = jogador;
-			aux = 1;
-			verificar();
-			if(veri == 0){
-				marcar();
-			}
-		}
-	}else if(aux == 1){
+		jogar(1, 'X', x, y);
+	}else if(aux == 1 && tipoJoga == 0){
 		robo();
+	}else if(aux == 1 && tipoJoga == 1){
+		jogar(0, 'O', x, y);
 	}
 }
 
