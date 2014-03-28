@@ -1,6 +1,8 @@
 var tabuleiro = [[], [], []];
 var aux = 0;
 var jogadas = 0;
+var pv1 = 0;
+var pv2 = 0;
 var acabou = false;
 var tipoJoga = 0;
 result = document.getElementById('result');
@@ -13,7 +15,23 @@ modalFechar = function (a) {
 }
 
 recarregarPag = function () {
-	window.location.reload();
+	tabuleiro = [[],[],[]];
+	var casa = document.getElementById("c00").innerHTML = "";
+	var casa = document.getElementById("c01").innerHTML = "";
+	var casa = document.getElementById("c02").innerHTML = "";
+	var casa = document.getElementById("c10").innerHTML = "";
+	var casa = document.getElementById("c11").innerHTML = "";
+	var casa = document.getElementById("c12").innerHTML = "";
+	var casa = document.getElementById("c20").innerHTML = "";
+	var casa = document.getElementById("c21").innerHTML = "";
+	var casa = document.getElementById("c22").innerHTML = "";
+	acabou = false;
+	veri = 0;
+	botao = document.getElementById('botao');
+	botao.style.display = "none";
+	result.innerHTML = '';
+	aux = 0;
+	jogadas = 0;
 }
 
 robo = function  () {
@@ -100,5 +118,18 @@ verificar = function  (jogador) {
 		return;
 	}
 	acabou = true;
+	placar(jogador);
 
+}
+
+placar = function (jogador) {
+	if(jogador == "X"){
+		var p1 = document.getElementById('p1');
+		pv1++;
+		p1.innerHTML = "X: "+pv1;
+	}else if(jogador == "O"){
+		var p2 = document.getElementById('p2');
+		pv2++;
+		p2.innerHTML = "O: "+pv2;
+	}
 }

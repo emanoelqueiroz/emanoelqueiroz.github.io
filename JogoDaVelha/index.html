@@ -28,21 +28,22 @@
 		<div class="container">
 			<div id="recomecar">
 				<div id="botao" onclick="recarregarPag();">Recomeçar</div>
+				<div id="botao" onclick="recarregarPag();">Novo Jogo</div>
 			</div>
 			<div class="tabuleiro">
-				<div id="c00" onclick="marcar(0, 0);"></div>
-				<div id="c01" onclick="marcar(0, 1);"></div>
-				<div id="c02" onclick="marcar(0, 2);"></div>
-				<div id="c10" onclick="marcar(1, 0);"></div>
-				<div id="c11" onclick="marcar(1, 1);"></div>
-				<div id="c12" onclick="marcar(1, 2);"></div>
-				<div id="c20" onclick="marcar(2, 0);"></div>
-				<div id="c21" onclick="marcar(2, 1);"></div>
-				<div id="c22" onclick="marcar(2, 2);"></div>
+				<div id="c00" onclick="marcar(0, 0);" class="casas"></div>
+				<div id="c01" onclick="marcar(0, 1);" class="casas"></div>
+				<div id="c02" onclick="marcar(0, 2);" class="casas"></div>
+				<div id="c10" onclick="marcar(1, 0);" class="casas"></div>
+				<div id="c11" onclick="marcar(1, 1);" class="casas"></div>
+				<div id="c12" onclick="marcar(1, 2);" class="casas"></div>
+				<div id="c20" onclick="marcar(2, 0);" class="casas"></div>
+				<div id="c21" onclick="marcar(2, 1);" class="casas"></div>
+				<div id="c22" onclick="marcar(2, 2);" class="casas"></div>
 			</div>
 			<div id="placar">
-				<div>X: 1</div>
-				<div>O: 2</div>
+				<div id="p1">X: 0</div>
+				<div id="p2">O: 0</div>
 			</div>
 			<p class="comoJogar">
 				<strong>Como Jogar:</strong> Clique no local onde deseja marcar tentando formar uma sequência de 3 <strong>X</strong> e bloqueando seu adversário para que ele não consiga marcar a sequência dos 3 <strong>O</strong>.
