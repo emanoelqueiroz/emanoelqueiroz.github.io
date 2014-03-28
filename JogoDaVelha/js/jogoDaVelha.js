@@ -44,7 +44,7 @@ jogar = function  (a, b, x, y) {
 			casa.innerHTML = jogador;
 			tabuleiro[x][y] = jogador;
 			aux = a;
-			verificar();
+			verificar(jogador);
 			if(veri == 0){
 				marcar();
 			}
@@ -68,7 +68,7 @@ marcar = function (x, y) {
 	}
 }
 
-verificar = function  () {
+verificar = function  (jogador) {
 	if (jogadas == 9) {
 		result.innerHTML = 'Deu Empate!';
 		veri = 1;
