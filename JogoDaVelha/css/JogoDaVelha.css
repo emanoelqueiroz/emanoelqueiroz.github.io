@@ -75,7 +75,7 @@ color: #666;
 font-size: 18px;
 }
 #black {
-position: absolute;
+position: fixed;
 display: block;
 background-color: rgba(0, 0, 0, 0.76);
 height: 100%;
@@ -86,7 +86,7 @@ width: 350px;
 height: 200px;
 background-color: rgb(252, 252, 252);
 border-radius: 5px;
-position: fixed;
+position: absolute;
 left: 37%;
 top: 30%;
 }
