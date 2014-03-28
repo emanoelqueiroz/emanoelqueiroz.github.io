@@ -52,6 +52,7 @@ robo = function  () {
 }
 
 jogar = function  (a, b, x, y) {
+	jogadas++;
 	var casa = document.getElementById("c"+x+y);
 	jogador = b;
 	if(tabuleiro[x][y] != null){
@@ -68,7 +69,6 @@ jogar = function  (a, b, x, y) {
 }
 
 marcar = function (x, y) {
-	jogadas++;
 	if (acabou) {
 		result.innerHTML = "Acabou!";
 		botao = document.getElementById('botao');
