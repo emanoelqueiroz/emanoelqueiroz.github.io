@@ -3,7 +3,6 @@ var aux = 0;
 var jogadas = 0;
 var acabou = false;
 var tipoJoga = 0;
-
 result = document.getElementById('result');
 veri = 0;
 
@@ -18,8 +17,8 @@ recarregarPag = function () {
 }
 
 robo = function  () {
-	x = Math.floor((Math.random()*3));
-	y = Math.floor((Math.random()*3));
+	var x = Math.floor((Math.random()*3));
+	var y = Math.floor((Math.random()*3));
 
 	var casa = document.getElementById("c"+x+y);
 		jogador = 'O';
@@ -30,25 +29,24 @@ robo = function  () {
 		casa.innerHTML = jogador;
 		tabuleiro[x][y] = jogador;
 		aux = 0;
-		verificar();
+		verificar(jogador);
 	}
 }
 
 jogar = function  (a, b, x, y) {
 	var casa = document.getElementById("c"+x+y);
-		jogador = b;
-
-		if(tabuleiro[x][y] != null){
-			result.innerHTML = 'Esse bloco ja esta marcado!';
-		}else{
-			casa.innerHTML = jogador;
-			tabuleiro[x][y] = jogador;
-			aux = a;
-			verificar(jogador);
-			if(veri == 0){
-				marcar();
-			}
+	jogador = b;
+	if(tabuleiro[x][y] != null){
+		result.innerHTML = 'Esse bloco ja esta marcado!';
+	}else{
+		casa.innerHTML = jogador;
+		tabuleiro[x][y] = jogador;
+		aux = a;
+		verificar(jogador);
+		if(veri == 0 && tipoJoga == 0){
+			robo();
 		}
+	}
 }
 
 marcar = function (x, y) {
