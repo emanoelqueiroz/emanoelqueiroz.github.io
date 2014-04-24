@@ -33,10 +33,13 @@ modalFechar = function (a) {
 	aux = 0;
 	jogadas = 0;
 }*/
+efeitoDeJesus = function () {
+	$('.tabuleiro div').html('');
+}
 
 recarregarPag = function () {
 	tabuleiro = [[],[],[]];
-	$('.tabuleiro div').html('');
+	efeitoDeJesus();
 	acabou = false;
 	veri = 0;
 	$('#botao').css('display','none');
