@@ -14,7 +14,7 @@ modalFechar = function (a) {
 	tipoJoga = a;
 }
 
-recarregarPag = function () {
+/*recarregarPag = function () {
 	tabuleiro = [[],[],[]];
 	var casa = document.getElementById("c00").innerHTML = "";
 	var casa = document.getElementById("c01").innerHTML = "";
@@ -29,6 +29,17 @@ recarregarPag = function () {
 	veri = 0;
 	botao = document.getElementById('botao');
 	botao.style.display = "none";
+	result.innerHTML = '';
+	aux = 0;
+	jogadas = 0;
+}*/
+
+recarregarPag = function () {
+	tabuleiro = [[],[],[]];
+	$('.tabuleiro div').html('');
+	acabou = false;
+	veri = 0;
+	$('#botao').css('display','none');
 	result.innerHTML = '';
 	aux = 0;
 	jogadas = 0;
@@ -119,7 +130,6 @@ verificar = function  (jogador) {
 	}
 	acabou = true;
 	placar(jogador);
-
 }
 
 placar = function (jogador) {
