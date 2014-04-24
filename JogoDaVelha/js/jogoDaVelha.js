@@ -34,7 +34,11 @@ modalFechar = function (a) {
 	jogadas = 0;
 }*/
 efeitoDeJesus = function () {
-	$('.tabuleiro div').html('');
+	$('.tabuleiro div').css('opacity','0');
+	setTimeout(function() {
+		$('.tabuleiro div').html('');
+		$('.tabuleiro div').css('opacity','1');
+	}, 700);
 }
 
 recarregarPag = function () {

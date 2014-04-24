@@ -31,7 +31,7 @@ width: 164px;
 text-align: center;
 line-height: 160px;
 color: white;
-transition:0.3s;
+transition:0.5s;
 cursor: pointer;
 }
 .tabuleiro div:hover{
