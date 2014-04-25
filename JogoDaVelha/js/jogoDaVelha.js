@@ -46,7 +46,7 @@ recarregarPag = function () {
 	efeitoDeJesus();
 	acabou = false;
 	veri = 0;
-	$('#botao').css('display','none');
+	$('#botao').slideUp();
 	result.innerHTML = '';
 	aux = 0;
 	jogadas = 0;
@@ -89,8 +89,7 @@ jogar = function  (a, b, x, y) {
 marcar = function (x, y) {
 	if (acabou) {
 		result.innerHTML = "Acabou!";
-		botao = document.getElementById('botao');
-		botao.style.display = "block";
+		$('#botao').slideDown();
 		return;
 	}
 	if(aux == 0){
