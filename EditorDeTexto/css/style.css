@@ -1,0 +1,71 @@
+*{
+padding: 0px;
+margin: 0px;
+}
+body{background-color: #F5F5F5;}
+.container{
+margin: 0 auto;
+width: 90%;
+max-width: 760px
+}
+.logo {
+text-align: center;
+font-variant: small-caps;
+font-family: sans-serif;
+font-weight: 100;
+color: #444;
+font-size: 35px;
+}
+.salvar{
+height: 33px;
+width: 75px;
+padding: 3px;
+color: #FFF;
+border: 1px solid #09F;
+font-variant: small-caps;
+border-radius: 3px;
+font-size: 16px;
+background-color: #4F8DEB;
+}
+.bt_editando:hover {
+background-color: #FFF;
+color: #666;
+}
+.bt_editando {
+padding: 4px;
+background-color: #666;
+min-width: 25px;
+font-size: 17px;
+color: #FFF;
+border: 2px solid #666;
+border-radius: 3px;
+}
+.bt_editando:focus {outline: none;}
+.papel {
+width: 760px;
+height: 1000px;
+border: 1px solid #E9E9E9;
+padding: 25px;
+background-color: #FFF;
+box-shadow: 0px 0px 20px #D3D3D3;
+margin-top: 25px;
+margin-bottom: 25px;
+font-size: 20px;
+font-family: calibri;
+font-variant: small-caps;
+color: #444;
+}
+.papel:focus{outline: none;}
+
+@media print{
+	button{
+		display: none;
+	}
+	h1{
+		display: none;
+	}
+	.papel{
+		box-shadow: 0px 0px 0px #E2E2E2;
+		border: none;
+	}
+}

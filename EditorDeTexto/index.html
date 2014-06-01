@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Editor de Texto</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="ISO-8">
+  </head>
+  <body>
+    <div class="tudo">
+      <div class="container">
+        <h1 class="logo">Editor de Texto</h1>
+        <button class="salvar">Salvar</button>
+        <button class="salvar" onclick="print();">Imprimir</button>
+        <button class="bt_editando" onclick="negrito();"><b>N</b></button>
+        <button class="bt_editando" onclick="italico();"><i>I</i></button>
+        <button class="bt_editando" onclick="sublinhado();"><u>S</u></button>
+        <div class="papel" contenteditable="true"></div>
+      </div>
+      <!-- <h1 >Fontes para a Web</h1>
+    	<p id="texto" ng-repeat="todo in todos" >
+        {{todo.text}}
+      </p>
+      <form ng-submit="salvar();">
+        <label>Digite seu texto:</label>
+        <input type="text" ng-model="texto" name="inputTexto">
+        <button class="salvar">Salvar</button>
+      </form>
+      <button class="negrito" onclick="negrito();">N</button> -->
+    </div>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
