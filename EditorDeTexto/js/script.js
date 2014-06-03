@@ -1,5 +1,7 @@
 window.onload = function() {
 	foco();
+	var papel = document.getElementById("papel");
+	papel.style.marginTop = '25px';
 };
 var foco = function () {
 	document.getElementById("papel").focus();
