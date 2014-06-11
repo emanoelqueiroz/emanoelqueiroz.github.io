@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -8,8 +7,12 @@
   </head>
   <body>
     <div class="tudo">
+      <div class="topo">
+        <div class="container">
+          <h1 class="logo"><img src="http://particularme.com/images/icon_edit.png"/>Editor de Texto</h1>
+        </div>
+      </div>
       <div class="container">
-        <h1 class="logo"><img src="http://particularme.com/images/icon_edit.png"/>Editor de Texto</h1>
         <div class="menu">
           <button class="salvar">Salvar</button>
           <button class="salvar" onclick="print();">Imprimir</button>
@@ -27,6 +30,9 @@
               <option value="Times New Roman">Times New Roman</option>
           </select>
           <button id="smallCaps" class="bt_editando smallCaps" onclick="smallCaps();">small-caps</button>
+          <button id="left" class="bt_editando ativado" onclick="alinhamento('left')">Left</button>
+          <button id="center" class="bt_editando" onclick="alinhamento('center')">Center</button>
+          <button id="right" class="bt_editando" onclick="alinhamento('right')">Right</button>
         </div>
         <div id="papel" class="papel" contenteditable="true"></div>
       </div>
