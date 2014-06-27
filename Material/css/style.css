@@ -14,13 +14,14 @@ background: rgba(0, 0, 0, 0.20);
 display: none;
 }
 .circulo {
-width: 55px;
+width: 3.438rem;
 font-size: 45px;
 color: white;
 bottom: 15px;
 padding: 5px;
 box-shadow: 0px 2px 3px #5F7FA6;
 right: 15px;
+height:3.438rem;
 text-align: center;
 border-radius: 35px;
 background-color: #5F7FA6;
