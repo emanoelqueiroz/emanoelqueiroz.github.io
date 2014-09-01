@@ -5,77 +5,17 @@ margin: 0px;
 body{
 color: #222;
 }
+a{
+color: #333;
+text-decoration: none;
+}
+a:hover{
+text-decoration: underline;
+}
 .container{
 max-width: 48rem;
 width: 90%;
 margin: 0 auto;
-}
-.fundo_modal {
-position: fixed;
-width: 100%;
-height: 100%;
-background: rgba(0, 0, 0, 0.20);
-display: none;
-}
-.circulo {
-font-size: 2.8rem;
-bottom: 15px;
-padding: 2px 15px 2px 15px;
-right: 15px;
-text-align: center;
-position: fixed;
-transition: 1s;
-z-index: 999;
-cursor: pointer;
-}
-.conteudo {
-height: auto;
-position: fixed;
-background: white;
-margin-right: 3%;
-margin-left: 3%;
-transition: 1s;
-font-size: 18px;
-}
-.topo {
-font-size: 18px;
-text-align: left;
-float: left;
-padding: 0;
-width: 100%;
-}
-.topo h3 {
-float: left;
-padding: 10px;
-font-weight: 100;
-}
-.btn-min {
-text-align: right;
-float: right;
-height: 20px;
-font-size: 20px;
-margin-top: 10px;
-margin-right: 10px;
-border-radius: 10px;
-background-color: #333;
-width: 20px;
-cursor: pointer;
-}
-.conteudo_cont{
-padding: 15px;
-float: left;
-min-width: 90%;
-}
-.conteudo_base h1{
-margin-bottom: 15px;
-padding: 15px;
-background-color: #5F7FA6;
-color: white;
-font-weight: 100;
-}
-.conteudo_base p {
-font-size: 18px;
-padding: 15px;
 }
 .artista {
 position: fixed;
@@ -141,11 +81,4 @@ margin-bottom: 15px;
 text-align: center;
 margin-top: 50px;
 margin-bottom: 20px;
-}
-a{
-color: #333;
-text-decoration: none;
-}
-a:hover{
-text-decoration: underline;
 }
