@@ -22,13 +22,7 @@ position: fixed;
 top: 0;
 width: 100%;
 height: 150px;
-background-image: url('../img/bg2.jpg');
-background-position: center center;
-background-size: cover;
-box-shadow: 0px 0px 6px #000000;
--webkit-box-shadow: 0px 0px 6px #000000;
--moz-box-shadow: 0px 0px 6px #000000;
--o-box-shadow: 0px 0px 6px #000000;
+background: #FFC200;
 }
 .a_topo {
 height: 40px;
@@ -49,15 +43,13 @@ text-align: right;
 margin: auto;
 margin-top: 20px;
 width: 150px;
-border-radius: 80px;
-box-shadow: 0px 0px 6px #000;
-background-size: cover;
--o-background-size: cover;
--webkit-background-size: cover;
--moz-background-size: cover;
-background-image: url('../img/e2.jpg');
-background-position: center center;
 height: 150px;
+border-radius: 80px;
+border:5px solid #FFF;
+text-align: center;
+line-height: 145px;
+font-size: 100px;
+background: #FFC200;
 }
 .conteudo_artista{
 padding: 5px;
