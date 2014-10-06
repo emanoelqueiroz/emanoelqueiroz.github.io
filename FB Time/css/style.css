@@ -1,0 +1,88 @@
+@font-face {
+    font-family: Roboto-Regular;
+    src: url("../font/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: Roboto-Light;
+    src: url("../font/Roboto-Light.ttf");
+}
+
+body{
+	padding: 0px;
+	margin: 0px;
+}
+
+.logo-jornal {
+	text-align: center;
+	font-size: 65px;
+	color: #111;
+	padding: 10px;
+	border-bottom: 5px solid #111;
+	margin-bottom: 10px;
+}
+
+.page{
+	width: 900px;
+	margin: 0 auto;
+	font-family: Roboto-Light;
+}
+
+.janela {
+	float: left;
+	width: 28%;
+	border-radius: 1px;
+	padding: 10px;
+	margin: 10px;
+	cursor: pointer;
+}
+
+.janela:hover .j-image img{
+	filter: grayscale(0);
+	-webkit-filter: grayscale(0);
+}
+
+.j-title {
+	color: #111;
+	font-size: 36px;
+}
+
+.j-subtitle {
+	font-size: 17px;
+	color: #666;
+	padding-bottom: 10px;
+}
+
+.j-image {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.j-image img {
+	width: 100%;
+	filter: grayscale(1);
+	-webkit-filter: grayscale(1);
+	transition: 0.3s;
+}
+
+.j-content {
+	color: #111;
+	font-size: 20px;
+}
+.j-content:hover{
+	text-decoration: underline;
+}
+
+.j-more {
+	background-color: #111;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	font-size: 27px;
+	margin-top: 10px;
+	transition: 0.3s;
+}
+
+.j-more:hover{
+	opacity: 0.9;
+}
