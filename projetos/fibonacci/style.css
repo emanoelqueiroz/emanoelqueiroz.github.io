@@ -1,0 +1,14 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+.fibonacci-number {
+	color: #111;
+	font-family: arial;
+	font-size: 34px;
+	font-weight: 100;
+	letter-spacing: 3px;
+	padding: 27.5px;
+	text-align: center;
+}
