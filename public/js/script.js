@@ -1,18 +1,18 @@
-var audio = document.getElementById('hammer');
-audio.play();
-audio.src('audio/hammer.mp3');
-audio.play();
+function initialize () {
+ var topo = document.getElementById('topo');
+ var a_foto = document.getElementById('a_foto');
+ var conteudo = document.getElementById('conteudo');
 
-function savantSite (x, y) {
-	var body = document.getElementsByTagName('body')[0],
-		vario = document.createElement('div');
+ topo.style.height = '150px';
 
-	vario.setAttribute('class', 'vario');
-	vario.style.top = (y - 10) + 'px';
-	vario.style.left = (x - 30) + 'px';
-	body.appendChild(vario);
+ setTimeout(function() {
+ a_foto.style.bottom = '-75px';
+ a_foto.style.transform = 'rotate(360deg)';
+ }, 1000);
+
+ setTimeout(function() {
+ conteudo.style.opacity = '1';
+ }, 1250);
 }
 
-document.onmousemove = function (e) {
-	savantSite(e.clientX, e.clientY);
-}
+initialize();
