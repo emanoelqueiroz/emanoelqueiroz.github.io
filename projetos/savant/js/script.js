@@ -1,4 +1,7 @@
-document.getElementById('hammer').play();
+var audio = document.getElementById('hammer');
+audio.play();
+audio.src('audio/hammer.mp3');
+audio.play();
 
 function savantSite (x, y) {
 	var body = document.getElementsByTagName('body')[0],
