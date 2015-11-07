@@ -38,7 +38,7 @@ if (window.SpeechRecognition === null) {
 		try {
             recognizer.start();
 			document.getElementById("status").getElementsByTagName("span")[0].className = "gravando";
-			document.getElementById("status").getElementsByTagName("span")[0].innerHTML = "gravando";
+			document.getElementById("status").getElementsByTagName("span")[0].innerHTML = "Gravando";
           } catch(ex) {
           	alert("error: "+ex.message);
           }
