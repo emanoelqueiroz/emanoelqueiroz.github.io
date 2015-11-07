@@ -18,20 +18,21 @@ if (window.SpeechRecognition === null) {
 
 	recognizer.onresult = function(event){
 		transcription.textContent = "";
+
 		for (var i = event.resultIndex; i < event.results.length; i++) {
-			if(event.results[i].isFinal){
+			if (event.results[i].isFinal) {
 				transcription.textContent = 'Você disse: ' + event.results[i][0].transcript;
-				
-				if (event.results[i][0].transcript === 'ai') {
+
+				if (event.results[i][0].transcript === 'ai' || event.results[i][0].transcript === 'aí') {
 					baymax.textContent = "Olá, meu nome é Baymax!"
 				}
-			}else{
+			} else {
             	transcription.textContent += event.results[i][0].transcript;
 			}
 		}
 	}
 
-	document.querySelector("#rect").addEventListener("click",function(){
+	document.querySelector("#rect").addEventListener("click", function(){
 		try {
             recognizer.start();
 			document.getElementById("status").getElementsByTagName("span")[0].className = "gravando";
