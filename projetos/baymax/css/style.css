@@ -1,3 +1,48 @@
 .hidden {
 	display: none;
 }
+
+.baymax-head {
+	position: absolute;
+    height: 90%;
+    width: 50%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: white;
+    margin: auto;
+    border: 1px solid silver;
+    border-radius: 100%;
+}
+
+.left-eye {
+	position: absolute;
+    left: 15%;
+    top: 25%;
+    width: 20%;
+    height: 20%;
+    border-radius: 100%;
+    background-color: #000;
+}
+
+.right-eye {
+	position: absolute;
+    right: 15%;
+    top: 25%;
+    width: 20%;
+    height: 20%;
+    border-radius: 100%;
+    background-color: #000;
+}
+
+.linha {
+	position: absolute;
+    width: 50%;
+    height: 2%;
+    background-color: #000;
+    top: 35%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
