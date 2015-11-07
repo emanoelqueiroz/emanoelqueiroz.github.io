@@ -48,7 +48,7 @@ if (window.SpeechRecognition === null) {
 
 	document.querySelector("#stop_rect").addEventListener("click", function(){
 		try {
-            recognizer.stop();
+            recognizer.end();
 			document.getElementById("status").getElementsByTagName("span")[0].className = "aguardando permissao";
 			document.getElementById("status").getElementsByTagName("span")[0].innerHTML = "Aguardando permissão";
           } catch(ex) {
