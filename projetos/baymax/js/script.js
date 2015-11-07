@@ -36,16 +36,6 @@ if (window.SpeechRecognition === null) {
 		}
 	}
 
-	document.onload = function () {
-		try {
-			recognizer.start();
-			document.getElementById("status").getElementsByTagName("span")[0].className = "gravando";
-			document.getElementById("status").getElementsByTagName("span")[0].innerHTML = "Gravando";
-		} catch(ex) {
-			alert("error: "+ex.message);
-		}
-	}
-
 	document.querySelector("#rect").addEventListener("click", function(){
 		try {
             recognizer.start();
