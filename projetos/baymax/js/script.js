@@ -21,7 +21,10 @@ if (window.SpeechRecognition === null) {
 		for (var i = event.resultIndex; i < event.results.length; i++) {
 			if(event.results[i].isFinal){
 				transcription.textContent = 'Você disse: ' + event.results[i][0].transcript;
-				baymax.textContent = "Olá, meu nome é Baymax!"
+				
+				if (event.results[i][0].transcript === 'ai') {
+					baymax.textContent = "Olá, meu nome é Baymax!"
+				}
 			}else{
             	transcription.textContent += event.results[i][0].transcript;
 			}
