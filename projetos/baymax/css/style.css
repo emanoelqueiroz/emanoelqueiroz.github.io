@@ -3,6 +3,7 @@
 }
 
 .baymax-head {
+	display: none;
 	position: absolute;
     height: 250px;
     width: 250px;
