@@ -1,5 +1,12 @@
 body {
-	font-family: arial;
+    color: #FFF;
+    background-color: #4285F4;
+    font-family: arial;
+	height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+    box-sizing: border-box;
 }
 
 .hidden {
@@ -9,16 +16,18 @@ body {
 .baymax-head {
 	display: none;
 	position: absolute;
-    height: 250px;
-    width: 250px;
+    height: 275px;
+    width: 400px;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
     background-color: white;
     margin: auto;
-    border: 1px solid silver;
-    border-radius: 100%;
+    border-radius: 46%;
+    box-shadow: 9px -7px 11px -7px #6F6F6F inset, 
+			    0px 4px 18px -7px black inset, 
+			    -9px -7px 11px -7px #6F6F6F inset;
 }
 
 .left-eye {
