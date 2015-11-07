@@ -10,6 +10,8 @@ if (window.SpeechRecognition === null) {
 }else {
 	var recognizer = new window.SpeechRecognition();
 	var transcription = document.getElementById("transcription");
+	var baymax = document.getElementById("baymax");
+
 
 	//Para o reconhecedor de voz, não parar de ouvir, mesmo que tenha pausas no usuario
 	recognizer.continuous = true;
@@ -18,7 +20,8 @@ if (window.SpeechRecognition === null) {
 		transcription.textContent = "";
 		for (var i = event.resultIndex; i < event.results.length; i++) {
 			if(event.results[i].isFinal){
-				transcription.textContent = event.results[i][0].transcript+' (Taxa de acerto [0/1] : ' + event.results[i][0].confidence + ')';
+				transcription.textContent = 'Você disse: ' + event.results[i][0].transcript;
+				baymax.textContent = "Olá, meu nome é Baymax!"
 			}else{
             	transcription.textContent += event.results[i][0].transcript;
 			}
