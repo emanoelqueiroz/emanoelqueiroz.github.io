@@ -25,9 +25,9 @@ body {
     background-color: white;
     margin: auto;
     border-radius: 46%;
-    box-shadow: 9px -7px 11px -7px #6F6F6F inset, 
-			    0px 4px 18px -7px black inset, 
-			    -9px -7px 11px -7px #6F6F6F inset;
+    box-shadow: 7px -7px 11px -7px #BDBDBD inset, 
+			    0px 7px 18px -7px #BDBDBD inset, 
+			    -9px -7px 11px -7px #BDBDBD inset;
 }
 
 .left-eye {
