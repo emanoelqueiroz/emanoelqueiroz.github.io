@@ -42,7 +42,17 @@ if (window.SpeechRecognition === null) {
 			document.getElementById("status").getElementsByTagName("span")[0].className = "gravando";
 			document.getElementById("status").getElementsByTagName("span")[0].innerHTML = "Gravando";
           } catch(ex) {
-          	alert("error: "+ex.message);
+          	alert("error: " + ex.message);
           }
-	})
+	});
+
+	document.querySelector("#stop_rect").addEventListener("click", function(){
+		try {
+            recognizer.stop();
+			document.getElementById("status").getElementsByTagName("span")[0].className = "aguardando permissao";
+			document.getElementById("status").getElementsByTagName("span")[0].innerHTML = "Aguardando permissão";
+          } catch(ex) {
+          	alert("error: " + ex.message);
+          }
+	});
 }
