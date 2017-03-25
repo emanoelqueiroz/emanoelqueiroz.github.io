@@ -46,7 +46,9 @@ float:  left;
 text-align:  right;
 }
 .a_foto  {
-background:  #FFC200;
+background-image: url('../img/foto.jpg');
+background-repeat: no-repeat;
+background-size: 100% 100%;
 border: 5px solid #FFF;
 border-radius:  80px;
 text-align:  center;
@@ -64,8 +66,8 @@ transform:rotate(0deg);
 transition: 1s;
 }
 .conteudo {
-	opacity: 0;
-	transition: 1s;
+opacity: 0;
+transition: 1s;
 }
 .conteudo_artista  {
 padding:  5px;
