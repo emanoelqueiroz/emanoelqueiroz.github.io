@@ -26,7 +26,7 @@ position: fixed;
 top: 0;
 width: 100%;
 height: 0px; 
-background: #FFC200;
+background: #333;
 z-index: 2;
 transition: 1s;
 }
