@@ -40,8 +40,7 @@ a:hover  {
     right: 0;
     z-index: 3;
     transform: translateY(-300px);
-    animation: rotate 1s 1s forwards,
-               translateY 1s 1s forwards;
+    animation: photoAnimation 1s 1s forwards;
 }
 .conteudo {
     opacity: 0;
@@ -75,21 +74,12 @@ a:hover  {
     width:  100%;
 }
 
-@keyframes rotate {
+@keyframes photoAnimation {
     from {
-        transform: rotate(0);
+        transform: translateY(-300px) rotate(0);
     }
     to {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes translateY {
-    from {
-        transform: translateY(-300px);
-    }
-    to {
-        transform: translateY(0);
+        transform: translateY(0) rotate(360deg);
     }
 }
 
