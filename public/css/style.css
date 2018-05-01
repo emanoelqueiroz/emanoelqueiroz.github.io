@@ -20,10 +20,11 @@ a:hover  {
     top: 0;
     width: 100%;
     height: 150px; 
-    background: #333;
+    background: #222;
     z-index: 2;
     animation: scaleY 1s forwards;
     transform-origin: top;
+    will-change: transform;
 }
 .a_foto  {
     background-image: url('../img/foto.jpg');
@@ -41,9 +42,11 @@ a:hover  {
     z-index: 3;
     transform: translateY(-300px);
     animation: photoAnimation 1s 1s forwards;
+    will-change: transform;
 }
 .conteudo {
     opacity: 0;
+    will-change: opacity;
     animation: appear 1s 2s forwards;
 }
 .conteudo_artista  {
