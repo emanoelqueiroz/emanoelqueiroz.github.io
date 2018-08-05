@@ -1,6 +1,4 @@
 +function () {
     const ageEle = document.querySelector('#age');
-    const now = new Date();
-    const actualYear = now.getFullYear();
-    age.innerHTML = actualYear - 1994;
+    ageEle.innerHTML = (new Date()).getFullYear() - 1994;
 }();
