@@ -1,0 +1,107 @@
+:root {
+    --color-black: #000;
+    --color-silver: #ededed;
+}
+
+body {
+    color: var(--color-black);
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    padding: 0 120px;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    margin: 0;
+}
+
+p {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.4em;
+    margin: 36px 0 0;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 47px 0 0;
+}
+
+li {
+    margin-left: 13px;
+}
+
+li:first-child {
+    margin-left: 0;
+}
+
+a {
+    color: var(--color-black);
+    font-weight: 300;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.side-title:before,
+.side-title:after {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: var(--color-silver);
+    font-size: 120px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-transform: uppercase;
+    z-index: -1;
+}
+
+.side-title:before {
+    content: 'Emanoel';
+    right: 120px;
+    animation: goUp 7s infinite linear;
+}
+
+.side-title:after {
+    content: 'Queiroz';
+    animation: goDown 7s infinite linear;
+}
+
+@keyframes goUp {
+    from {
+        transform: translateY(100vh);
+    }
+
+    to {
+        transform: translateY(-1000px);
+    }
+}
+
+@keyframes goDown {
+    from {
+        transform: translateY(-1000px);
+    }
+
+    to {
+        transform: translateY(100vh);
+    }
+}

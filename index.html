@@ -7,84 +7,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hi, my name is Emanoel</title>
     <link href="https://fonts.googleapis.com/css?family=Rubik:300" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-
-<style>
-    body {
-        color: #000;
-        font-family: 'Rubik', sans-serif;
-        text-transform: uppercase;
-        margin: 0;
-        padding: 0;
-    }
-
-    main {
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        flex-direction: column;
-        height: 100vh;
-        padding: 0 120px;
-    }
-
-    h1 {
-        font-size: 80px;
-        font-weight: 300;
-        line-height: 1.2em;
-        margin: 0;
-    }
-
-    p {
-        font-size: 30px;
-        font-weight: 300;
-        line-height: 1.4em;
-        margin: 36px 0 0;
-    }
-
-    ul {
-        display: flex;
-        list-style: none;
-        padding: 0;
-        margin: 47px 0 0;
-    }
-
-    li {
-        margin-left: 13px;
-    }
-
-    li:first-child {
-        margin-left: 0;
-    }
-
-    a {
-        color: #000;
-        font-weight: 300;
-        text-decoration: none;
-    }
-
-    a:hover {
-        text-decoration: underline;
-    }
-</style>
 
 <body>
     <main>
         <h1>Hi, my name is Emanoel</h1>
-        <p>I'm a <span id="age"></span> years old developer who lives in Brazil and works for an awesome company called Ceicom.
-            </p>
+        <div class="side-title"></div>
+        <p>I'm a <span id="age"></span> years old developer who lives in Brazil and works for an <br /> awesome company called
+            Ceicom.
+        </p>
         <ul>
             <li><a href="https://www.facebook.com/emanoel.queiroz.3" target="__blank">Facebook</a></li>
             <li><a href="https://www.instagram.com/emanoel_queiroz/" target="__blank">Instagram</a></li>
             <li><a href="https://github.com/Dimebag03" target="__blank">Github</a></li>
         </ul>
     </main>
-
-    <script>
-        +function () {
-            const ageEle = document.querySelector('#age');
-            ageEle.innerHTML = (new Date()).getFullYear() - 1994;
-        }();
-    </script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
