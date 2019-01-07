@@ -17,12 +17,12 @@ main {
     justify-content: center;
     flex-direction: column;
     height: 100vh;
-    padding: 0 120px;
+    padding: 0 15px;
     overflow: hidden;
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 37px;
     font-weight: 300;
     text-transform: uppercase;
     line-height: 1.2em;
@@ -30,7 +30,7 @@ h1 {
 }
 
 p {
-    font-size: 30px;
+    font-size: 18px;
     font-weight: 300;
     line-height: 1.4em;
     margin: 36px 0 0;
@@ -40,7 +40,7 @@ ul {
     display: flex;
     list-style: none;
     padding: 0;
-    margin: 47px 0 0;
+    margin: 21px 0 0;
 }
 
 li {
@@ -76,13 +76,13 @@ a:hover {
 }
 
 .side-title:before {
-    content: 'lvrjaxdasup';
+    content: 'lvrjaxdasup'; /* Enigma: Programming */
     right: 120px;
     animation: goUp 7s infinite linear;
 }
 
 .side-title:after {
-    content: 'gqghrdvsu';
+    content: 'gqghrdvsu'; /* Enigma: Your Dream */
     animation: goDown 7s infinite linear;
 }
 
@@ -103,5 +103,23 @@ a:hover {
 
     to {
         transform: translateY(100vh);
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    main {
+        padding: 0 144px;
+    }
+
+    h1 {
+        font-size: 80px;
+    }
+
+    p {
+        font-size: 30px
+    }
+
+    ul {
+        margin: 47px 0 0;
     }
 }
