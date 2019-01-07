@@ -33,7 +33,7 @@ p {
     font-size: 18px;
     font-weight: 300;
     line-height: 1.4em;
-    margin: 36px 0 0;
+    margin: 15px 0 0;
 }
 
 ul {
@@ -116,7 +116,8 @@ a:hover {
     }
 
     p {
-        font-size: 30px
+        font-size: 30px;
+        margin: 36px 0 0;
     }
 
     ul {
