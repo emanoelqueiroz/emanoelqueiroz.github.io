@@ -36,6 +36,10 @@ p {
     margin: 15px 0 0;
 }
 
+.second-line {
+    display: inline;
+}
+
 ul {
     display: flex;
     list-style: none;
@@ -118,6 +122,10 @@ a:hover {
     p {
         font-size: 30px;
         margin: 36px 0 0;
+    }
+
+    .second-line {
+        display: block;
     }
 
     ul {
