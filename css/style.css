@@ -76,13 +76,13 @@ a:hover {
 }
 
 .side-title:before {
-    content: 'Emanoel';
+    content: 'lvrjaxdasup';
     right: 120px;
     animation: goUp 7s infinite linear;
 }
 
 .side-title:after {
-    content: 'Queiroz';
+    content: 'gqghrdvsu';
     animation: goDown 7s infinite linear;
 }
 
@@ -92,13 +92,13 @@ a:hover {
     }
 
     to {
-        transform: translateY(-1000px);
+        transform: translateY(-100%);
     }
 }
 
 @keyframes goDown {
     from {
-        transform: translateY(-1000px);
+        transform: translateY(-100%);
     }
 
     to {
