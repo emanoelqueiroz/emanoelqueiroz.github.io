@@ -10,7 +10,16 @@ body {
     padding: 0;
 }
 
+.main-wrapper {
+    display: grid;
+    grid-template-areas:
+        "side"
+        "main";
+    grid-template-columns: 1fr;
+}
+
 main {
+    grid-area: main;
     position: relative;
     display: flex;
     align-items: flex-start;
@@ -66,51 +75,25 @@ a:hover {
     text-decoration: underline;
 }
 
-.side-title:before,
-.side-title:after {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    color: var(--color-silver);
-    font-size: 120px;
-    writing-mode: vertical-lr;
-    text-orientation: upright;
-    text-transform: uppercase;
-    z-index: -1;
+.drawing-panel {
+    grid-area: side;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
 }
 
-.side-title:before {
-    content: 'lvrjaxdasup'; /* Enigma: Programming */
-    right: 120px;
-    animation: goUp 7s infinite linear;
-}
-
-.side-title:after {
-    content: 'gqghrdvsu'; /* Enigma: Your Dream */
-    animation: goDown 7s infinite linear;
-}
-
-@keyframes goUp {
-    from {
-        transform: translateY(100vh);
-    }
-
-    to {
-        transform: translateY(-100%);
-    }
-}
-
-@keyframes goDown {
-    from {
-        transform: translateY(-100%);
-    }
-
-    to {
-        transform: translateY(100vh);
-    }
+.drawing {
+    max-width: 100%;
 }
 
 @media screen and (min-width: 1150px) {
+    .main-wrapper {
+        grid-template-areas:
+            "main side";
+        grid-template-columns: 1fr 0.5fr;
+    }
+
     main {
         padding: 0 144px;
     }
