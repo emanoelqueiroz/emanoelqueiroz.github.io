@@ -25,13 +25,13 @@ main {
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    height: 100vh;
-    padding: 0 15px;
+    height: auto;
+    padding: 30px 38px 0;
     overflow: hidden;
 }
 
 h1 {
-    font-size: 37px;
+    font-size: 45px;
     font-weight: 300;
     text-transform: uppercase;
     line-height: 1.2em;
@@ -95,6 +95,7 @@ a:hover {
     }
 
     main {
+        height: 100vh;
         padding: 0 144px;
     }
 
